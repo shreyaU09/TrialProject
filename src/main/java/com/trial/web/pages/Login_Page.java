@@ -3,9 +3,7 @@ package com.trial.web.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
-import com.trial.web.listeners.MyListeners;
 import com.trial.web.lib.BasePage;
 import com.trial.web.lib.WebActionUtility;
 public class Login_Page extends BasePage{
@@ -35,8 +33,6 @@ public class Login_Page extends BasePage{
 		WebActionUtility.info("Start Loging in");
 		WebActionUtility.doubleClickOnElement(emailTxtBx1, "Email Text Box");
 		WebActionUtility.typeText(emailTxtBx1, userName, "Email Address Text box");
-		//WebActionUtility.doubleClickOnElement(passWordTxtBx, "Password Box");
-		//WebActionUtility.typeText(passWordTxtBx, password, "Password Text Box");
 		WebActionUtility.clickOnElementUsingJS(loginBtn1, "'Login' Button");
 		WebActionUtility.info("Successfully logged into Home page of the Application");
 	}

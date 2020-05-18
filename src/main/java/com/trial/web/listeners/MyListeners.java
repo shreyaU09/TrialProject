@@ -13,16 +13,17 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
 import com.aventstack.extentreports.Status;
-import com.trial.web.lib.BaseTest;
 
-public class MyListeners  implements ITestListener{
-	
-	public MyListeners() {  }
-   
+
+public class MyListeners implements ITestListener {
+
+	public MyListeners() {
+	}
+
 	public void onStart(ITestContext context) {
 		Reporter.log("*************** Test Suite " + context.getName() + " Started *************", true);
+		ExtentTestManager.startTest(context.getName());
 	}
 
 	public void onFinish(ITestContext context) {
@@ -31,24 +32,21 @@ public class MyListeners  implements ITestListener{
 		ExtentManager.getInstance().flush();
 	}
 
-
 	public void onTestStart(ITestResult result) {
 		Reporter.log(("*************** Running test method " + result.getMethod().getMethodName() + "..."), true);
-		ExtentTestManager.startTest(result.getMethod().getMethodName());
+
 	}
 
-	
 	public void onTestSuccess(ITestResult result) {
 		Reporter.log("*************** Executed " + result.getMethod().getMethodName() + " Test Successfully...", true);
 		ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
-		
+
 	}
 
 	public void onTestFailure(ITestResult result) {
 		Reporter.log("*************** Test Execution " + result.getMethod().getMethodName() + " Failed...", true);
 		ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
-		
-	
+
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -60,10 +58,9 @@ public class MyListeners  implements ITestListener{
 		System.out.println("*************** Test failed but within percentage % " + result.getMethod().getMethodName());
 	}
 
-	
-	public void getScreenshotAndAddToReport( WebDriver driver,String screenShotNmae) {
+	public void getScreenshotAndAddToReport(WebDriver driver, String screenShotNmae) {
 
-		String screenShotpath = getScreenShot(driver,screenShotNmae);
+		String screenShotpath = getScreenShot(driver, screenShotNmae);
 		try {
 			ExtentTestManager.getTest().addScreenCaptureFromPath(screenShotpath);
 			Thread.sleep(2000);
@@ -72,9 +69,8 @@ public class MyListeners  implements ITestListener{
 		}
 	}
 
-	public String getScreenShot( WebDriver driver,String screenshotName) {
+	public String getScreenShot(WebDriver driver, String screenshotName) {
 
-	
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 
 		// Convert web driver object to TakeScreenshot
@@ -95,5 +91,5 @@ public class MyListeners  implements ITestListener{
 			e.printStackTrace();
 		}
 		return DestFile;
-	}}
-
+	}
+}

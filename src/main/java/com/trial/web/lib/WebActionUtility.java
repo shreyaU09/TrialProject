@@ -32,8 +32,9 @@ public class WebActionUtility {
 	}
 
 	public  void info(String message) {
-		ExtentTestManager.getTest().info(message);
 		Reporter.log(message, true);
+		ExtentTestManager.getTest().info(message);
+		
 		//Log.info(MarkupHelper.createLabel(result.getTestName(), ExtentColor.GREEN));
 
 	}
@@ -140,7 +141,6 @@ public class WebActionUtility {
 		}
 	}
 	
-
 	/* Get the Text From the Page */
 	public void clearText(WebElement element, String elementName) {
 		info("Clear the Text Present in" + elementName);

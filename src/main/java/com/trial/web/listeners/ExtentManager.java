@@ -12,7 +12,7 @@ public class ExtentManager {
 	/** Extent Report Variable Declaration **/
 	private static ExtentReports extent;
 	private static String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	private static String reportFileName = "Trial" + timeStamp + ".html";
+	private static String reportFileName = "Trial Test Automation" + timeStamp + ".html";
 	private static String fileSeperator = System.getProperty("file.separator");
 	private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "ExecutionReports";
 	private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;

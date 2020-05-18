@@ -8,6 +8,7 @@ import com.trial.web.lib.ExcelLibrary;
 import com.trial.web.pages.Home_Page;
 import com.trial.web.pages.Login_Page;
 
+
 public class TC_001 extends BaseTest{
 	@Test(alwaysRun=true, description = "Trial Scripts")
 	public void demoTestMethod2()  {
@@ -17,8 +18,9 @@ public class TC_001 extends BaseTest{
 		}
 		
 		/* Fetch the test data from the EXCEL SHEET */
-		int col1 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "Username", "TCID");
-		int col7 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "Password", "TCID");
+	
+		
+		
 		int col2 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "Email", "TCID");
 		int col3 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "FirstName", "TCID");
 		int col4 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "Gender", "TCID");
@@ -26,9 +28,6 @@ public class TC_001 extends BaseTest{
 		int col6 = ExcelLibrary.getColumnIndex(xlPath, "Demo", "Phone", "TCID");
 		
 		String[] excel1 = ExcelLibrary.toReadExcelData(xlPath, "Demo", "TC_001");
-		
- 		Login_Page loginPage = new Login_Page(driver, ETO, WebActionUtility);
-		loginPage.loginToApplication(excel1[col1], excel1[col7]);
 		
 		Home_Page homepage = new Home_Page(driver, ETO, WebActionUtility);
 		homepage.editTable( excel1[col2],excel1[col3],excel1[col4],excel1[col5],excel1[col6]);
