@@ -40,8 +40,7 @@ public class Home_Page extends BasePage{
 	
 	
 	
-	//div[@class='ui-grid-cell ng-scope ui-grid-coluiGrid-0005']/div/input
-
+	
 	public void editTable(String email, String firstName,String gender ,String lastname,String phoneNo) {
 		
 		
@@ -60,7 +59,6 @@ public class Home_Page extends BasePage{
 		WebActionUtility.typeText(phoneTxtBx, phoneNo, "phoneNo Text Box");
 		WebActionUtility.sleep(2);
 		WebActionUtility.clickOnElementUsingJS(saveBtn, "'Save' Button");
-		
 		WebActionUtility.info("Successfully edited the Table");
 	}
 	
