@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[*************** Test Suite Test Started *************]]>
+    </line>
+    <line>
+      <![CDATA[*************** Running test method demoTestMethod2...]]>
+    </line>
+    <line>
+      <![CDATA[Start Loging in]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click  into Email Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Email Address Text box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to type ugavekarshreya@yahoo.in into Email Address Text box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click  into 'Login' Button]]>
+    </line>
+    <line>
+      <![CDATA[Successfully logged into Home page of the Application]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click  into 'Login' Button]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click  into 'Edit' Button]]>
+    </line>
+    <line>
+      <![CDATA[Clear the Text Present inemail Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Cleared the Text Present inemail Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Email Text Box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to type will123@gmail.com into Email Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Clear the Text Present infirstName Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Cleared the Text Present infirstName Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Email Text Box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to type Will into Email Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Clear the Text Present inlastname Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Cleared the Text Present inlastname Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into lastname Text Box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to type MA into lastname Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Clear the Text Present inphoneNo Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Cleared the Text Present inphoneNo Txt Bx]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into phoneNo Text Box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to type 885234123 into phoneNo Text Box]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click  into 'Save' Button]]>
+    </line>
+    <line>
+      <![CDATA[Successfully edited the Table]]>
+    </line>
+    <line>
+      <![CDATA[*************** Executed demoTestMethod2 Test Successfully...]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="35394" started-at="2020-05-14T11:10:38Z" finished-at="2020-05-14T11:11:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="35394" started-at="2020-05-14T11:10:38Z" finished-at="2020-05-14T11:11:13Z">
+      <class name="com.trial.web.testscripts.TC_001">
+        <test-method status="PASS" signature="launchApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.trial.web.testscripts.TC_001@14bf9759]" name="launchApp" is-config="true" duration-ms="5332" started-at="2020-05-14T11:10:38Z" finished-at="2020-05-14T11:10:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="signInToApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.trial.web.testscripts.TC_001@14bf9759]" name="signInToApp" is-config="true" duration-ms="4314" started-at="2020-05-14T11:10:43Z" finished-at="2020-05-14T11:10:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://demo.automationtesting.in/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInToApp -->
+        <test-method status="PASS" signature="demoTestMethod2()[pri:0, instance:com.trial.web.testscripts.TC_001@14bf9759]" name="demoTestMethod2" duration-ms="24404" started-at="2020-05-14T11:10:47Z" description="Trial Scripts" finished-at="2020-05-14T11:11:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[*************** Running test method demoTestMethod2...]]>
+            </line>
+            <line>
+              <![CDATA[Start Loging in]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click  into Email Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Email Address Text box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to type ugavekarshreya@yahoo.in into Email Address Text box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click  into 'Login' Button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully logged into Home page of the Application]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click  into 'Login' Button]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click  into 'Edit' Button]]>
+            </line>
+            <line>
+              <![CDATA[Clear the Text Present inemail Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Cleared the Text Present inemail Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Email Text Box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to type will123@gmail.com into Email Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Clear the Text Present infirstName Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Cleared the Text Present infirstName Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Email Text Box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to type Will into Email Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Clear the Text Present inlastname Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Cleared the Text Present inlastname Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into lastname Text Box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to type MA into lastname Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Clear the Text Present inphoneNo Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Cleared the Text Present inphoneNo Txt Bx]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into phoneNo Text Box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to type 885234123 into phoneNo Text Box]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click  into 'Save' Button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully edited the Table]]>
+            </line>
+            <line>
+              <![CDATA[*************** Executed demoTestMethod2 Test Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- demoTestMethod2 -->
+        <test-method status="PASS" signature="signOutFromApp()[pri:0, instance:com.trial.web.testscripts.TC_001@14bf9759]" name="signOutFromApp" is-config="true" duration-ms="1" started-at="2020-05-14T11:11:12Z" finished-at="2020-05-14T11:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOutFromApp -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.trial.web.testscripts.TC_001@14bf9759]" name="closeApp" is-config="true" duration-ms="1319" started-at="2020-05-14T11:11:12Z" finished-at="2020-05-14T11:11:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.trial.web.testscripts.TC_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
